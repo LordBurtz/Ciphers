@@ -1,10 +1,9 @@
-#message = 'Three can keep a secret'
-message = input('Enter here: ')
-translated = ''
+text = input('Enter here: ')
+output = ''
 
-i = len(message) - 1
+i = len(text) - 1
 while i >= 0:
-    translated = translated + message[i]
+    output = output + text[i]
     i = i -1
 
-print(translated)
+print(output)
