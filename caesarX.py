@@ -1,7 +1,7 @@
 text = input('Enter your text: ')
 keyCount = input('Enter the number of keys: ')
 keyCount = int(keyCount)
-translated = ''
+output = ''
 first = True
 mode = input('encrypt or decrypt: ')
 
@@ -15,33 +15,33 @@ for n in range(keyCount):
     if first == True:
         work = text
     else:
-        work = ''.join(translated)
-        translated = ''
+        work = ''.join(output)
+        output = ''
 
     work = work.upper()
     for symbol in work:
         if symbol in LETTERS:
-            num = LETTERS.find(symbol)
+            number = LETTERS.find(symbol)
             if mode == 'encrypt':
-                num = num + key
+                number = number + key
             elif mode == 'decrypt':
-                num = num - key
-            if num >= len(LETTERS):
-                num = num - len(LETTERS)
-            elif num < 0:
-                num = num + len(LETTERS)
+                number = number - key
+            if number >= len(LETTERS):
+                number = number - len(LETTERS)
+            elif number < 0:
+                number = number + len(LETTERS)
 
-            translated = translated + LETTERS[num]
+            output = output + LETTERS[number]
             first = False
 
         else:
-            translated = translated + symbol
+            output = output + symbol
             first = False
 
 
-        if range(len(text)) == range(len(translated)):
+        if range(len(text)) == range(len(output)):
             if mode == 'encrypt':
-                print('\nEncrypted text be like: ' + translated + '\n')
+                print('\nEncrypted text be like: ' + output + '\n')
 
             else:
-                print('\nDecrypted text be like: ' + translated + '\n')
+                print('\nDecrypted text be like: ' + output + '\n')
