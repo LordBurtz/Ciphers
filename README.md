@@ -11,3 +11,10 @@ The caesarX.py can be used for endless keys, whereas the caesar(n).py can only b
 The bruteforce isn't good, cause its just generating the strings and you will have to look through them by yourself.
 
 Reverse.py just writes text in reverse... duh
+
+Additional note: defcaesar is the whole caesarX.py code but you can import and use the module in other python programs
+import it as normal and everything should work fine
+
+for more information, help and support
+contact me on [Discord](https://discord.com/login)
+i am Fingolfin#5731
