@@ -5,7 +5,7 @@ key = input('Enter thou key: ')
 key = int(key)
 #key = 13
 mode = input('encrypt or decrypt: ')
-#do NOT change in case you dont know what you are doing these are the encryptable characters
+#use below for characters only
 #LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 LETTERS = ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`a bcdefghijklmnopqrstuvwxyz{|}~'
 translated = ''
