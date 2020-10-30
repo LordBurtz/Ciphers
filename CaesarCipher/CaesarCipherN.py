@@ -44,4 +44,4 @@ for n in range(keyCount):
                 print('\nEncrypted text be like: ' + output + '\n')
 
             else:
-                print('\nDecrypted text be like: ' + output + '\n')
+                print('\nDecrypted text be like: ' + output + '\n') 
