@@ -27,7 +27,7 @@ def encrypt(text, keyCount, mode):
         key = input('Enter the key: ')
         key = int(key)
 
-        LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
         if first == True:
             work = text
@@ -37,18 +37,18 @@ def encrypt(text, keyCount, mode):
 
         work = work.upper()
         for symbol in work:
-            if symbol in LETTERS:
-                number = LETTERS.find(symbol)
+            if symbol in characters:
+                number = characters.find(symbol)
                 if mode == 'encrypt':
                     number = number + key
                 elif mode == 'decrypt':
                     number = number - key
-                if number >= len(LETTERS):
-                    number = number - len(LETTERS)
+                if number >= len(characters):
+                    number = number - len(characters)
                 elif number < 0:
-                    number = number + len(LETTERS)
+                    number = number + len(characters)
 
-                output = output + LETTERS[number]
+                output = output + characters[number]
                 first = False
 
             else:
