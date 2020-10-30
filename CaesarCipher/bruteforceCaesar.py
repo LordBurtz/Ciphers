@@ -1,3 +1,4 @@
+#by Fingolfin#5731
 from array import *
 
 def main():
