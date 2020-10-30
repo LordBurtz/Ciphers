@@ -13,7 +13,7 @@ The bruteforce isn't good, cause its just generating the strings and you will ha
 Reverse.py just writes text in reverse... duh
 The transposition cipher is WIP and will be finished next week.
 
-Additional note: defcaesar is the whole caesarX.py code but you can import and use the module in other python programs
+Additional note: caesarCipher.py is the whole caesarX.py code but you can import and use the module in other python programs. (explanation for the older naming systm)
 import it as normal and everything should work fine
 
 for more information, help and/or support
